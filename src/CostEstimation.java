@@ -28,6 +28,8 @@ public class CostEstimation {
 		
 		//----> Prompt questions to user.
 		
+		try{
+			
 		basePrice = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter the base price"));
 		person = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter how many person are involved"));
 		choicesOptions = JOptionPane.showInputDialog(null, "Please select one of the following materials: \n" + choicesOptions); 
@@ -51,6 +53,13 @@ public class CostEstimation {
 		//Output
 
 		JOptionPane.showMessageDialog(null, "The total cost is " + "$" + finalCost);
+		
+		}
+		
+		catch(Exception mistake)
+		{
+			JOptionPane.showMessageDialog(null, "Your answer is not valid");
+		}
 		
 	}
 
