@@ -51,10 +51,10 @@ public class CostEstimation {
 
 			JOptionPane.showMessageDialog(null, "The total cost is " + "$" + finalCost);
 			
-			}
-			
-			catch(Exception mistake){
-				JOptionPane.showMessageDialog(null, "Your answer is not valid");
-			}
 		}
+			
+		catch(Exception mistake){
+			JOptionPane.showMessageDialog(null, "Your answer is not valid");
+		}
+	}
 }
