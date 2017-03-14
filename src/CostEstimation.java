@@ -50,7 +50,7 @@ public class CostEstimation {
 
 		//Output
 
-		System.out.print("The total cost is " + "$" + finalCost);
+		JOptionPane.showMessageDialog(null, "The total cost is " + "$" + finalCost);
 		
 	}
 
