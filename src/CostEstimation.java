@@ -26,7 +26,7 @@ public class CostEstimation {
 		for(int x = 0; x < materialMarkup.length; ++x)
 			choicesOptions = choicesOptions + "\n" + (x+1) + "- " + materials[x];
 		
-		//----> Prompt questions to user.
+		//----> Prompt questions to user inside a Try block in case of any exception occurs.
 		
 		try{			
 			basePrice = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter the base price"));
@@ -51,10 +51,10 @@ public class CostEstimation {
 
 			JOptionPane.showMessageDialog(null, "The total cost is " + "$" + finalCost);
 			
-			}
-			
+		}
+			// Actions to take if exception occurs 
 			catch(Exception mistake){
 				JOptionPane.showMessageDialog(null, "Your answer is not valid");
 			}
-		}
+	}
 }
